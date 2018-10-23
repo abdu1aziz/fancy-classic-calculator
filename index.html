@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="pageColorBackground">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Abdul Aziz">
+    <meta name="description" content="Abdul's Basic Calculator">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <title>Calculator - Abdul Aziz</title>
+    <script type="text/javascript" src="assets/style.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/circle.css">
+  </head>
+  <body>
+    <h1 style="margin-top: 10%; text-align: center; background-color: #006600; color: #FFFFFF; font-weight: bold;">Welcome To <font style="background-color: #FFFFFF; color: #006600;">Abdul's Calculator</font></h1>
+      <div class="main">
+          <form name="form">
+              <input class="textview" name="textview"><br>
+              <table>
+                <tr>
+                    <td><input class="button" type="button" value="C" onclick="clearBox();"></td>
+                    <td><input class="button" type="button" value="&larr;" onclick="backspace();"></td>
+                    <td><input class="button" type="button" value="/" onclick="press(/);"></td>
+                    <td><input class="button" type="button" value="x" onclick="press('*');"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="7" onclick="press(7);"></td>
+                    <td><input class="button" type="button" value="8" onclick="press(8);"></td>
+                    <td><input class="button" type="button" value="9" onclick="press(9);"></td>
+                    <td><input class="button" type="button" value="-" onclick="press('-');"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="4" onclick="press(4);"></td>
+                    <td><input class="button" type="button" value="5" onclick="press(5);"></td>
+                    <td><input class="button" type="button" value="6" onclick="press(6);"></td>
+                    <td><input class="button" type="button" value="+" onclick="press('+');"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="1" onclick="press(1);"></td>
+                    <td><input class="button" type="button" value="2" onclick="press(2);"></td>
+                    <td><input class="button" type="button" value="3" onclick="press(3);"></td>
+                    <td rowspan="5"><input class="button" type="button" value="=" style="height: 106px;" onclick="calculate();"></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><input class="button" type="button" value="0" style="width: 100%;" onclick="press(0);"></td>
+                  <td><input class="button" type="button" value="." onclick="press('.');"></td>
+                </tr>
+              </table>
+          </form>
+      </div>
+  </body>
+</html>
